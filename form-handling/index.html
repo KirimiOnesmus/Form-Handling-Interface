@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Handling with JavaScript</title>
+    <style>
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+
+    <h1>User Information Form</h1>
+
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input class="input" type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input class="input" type="text" id="email" name="email"><span id="emailError" class="error"></span><br><br>
+
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <select id="contactMethod" name="contactMethod">
+            <option value="">--Please choose an option--</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+        </select><br><br>
+
+        <div class="terms">
+            <input type="checkbox" id="terms" name="terms">
+            I accept terms and conditions
+    </div ><br><br>
+
+        <button type="submit" class="submit">Submit</button>
+        <span id="formError" class="error"></span>
+    </form>
+
+    <h2>Form Summary</h2>
+    <div id="formSummary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
